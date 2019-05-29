@@ -1,1 +1,9 @@
-﻿
+﻿const userScore = 0;
+const computerScore = 0;
+const userScore_span = document.getElementById("P1");
+const computerScore_span = document.getElementById("P2");
+const scoreBoard_div = document.querySelector(".score");
+const result_div = document.querySelector(".result");
+const rock_div = document.querySelector(".rock");
+const paper_div = document.querySelector(".paper");
+const scissor_div = document.querySelector(".scissor");

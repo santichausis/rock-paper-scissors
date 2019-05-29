@@ -9,22 +9,37 @@
     <script src="index.js"></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>Rock! Paper! Scissors!</h1>
     </header>
-    <section id="globalScore" class="globalScore">
+
+    <!-- Score Board -->
+    <section id="globalScore" class="score-board">
         <div id="score">
-            <p id="P1" class="player1">Player 1</p>
-            <p id="P2" class="player2">Player 2</p>
+            <p id="user-label" class="player1">Player 1</p>
+            <p id="computer-label" class="player2">Player 2</p>
             <div id="player1">0</div>
-            <div id="player1">:</div>
+            <div>:</div>
             <div id="player2">0</div>
         </div>
     </section>
+
+    <!-- Score Board -->
+    <section class="result">
+        <h3>Paper covers rock. You win!</h3>
+    </section>
+
+    <!-- Images -->
     <section id="images">
-        <figure class="item"><img src="img/rock.svg" alt="Rock"></figure>
-        <figure class="item"><img src="img/paper.svg" alt="Rock"></figure>
-        <figure class="item4"><img src="img/scissors.svg" alt="Rock"></figure>
+        <figure id="r" class="item rock"><img src="img/rock.svg" alt="Rock"></figure>
+        <figure id="p" class="item paper"><img src="img/paper.svg" alt="Rock"></figure>
+        <figure id="s" class="item4 scissor"><img src="img/scissors.svg" alt="Rock"></figure>
+    </section>
+
+    <!-- Turn Message -->
+    <section class="last-quote">
+        <p>Make your move</p>
     </section>
 </body>
 </html>

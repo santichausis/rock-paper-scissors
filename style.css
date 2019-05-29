@@ -18,7 +18,7 @@ header {
     width: 100%;
     padding-top: 15px;
 }
-.globalScore {
+.score-board {
     border: #ffffff solid 3px;
     width: 400px;
     height: 100px;
@@ -56,6 +56,10 @@ header {
     margin-right: 20px;
 }
 
+.result {
+    text-align: center;
+    font-size: 35px;
+}
 #images {
     display: flex;
     align-items: center;
@@ -72,4 +76,11 @@ header {
 
 .item4 {
     width: 70px;
+}
+
+.last-quote {
+    text-align: center;
+    font-size: 29px;
+    margin-top: 40px;
+
 }
