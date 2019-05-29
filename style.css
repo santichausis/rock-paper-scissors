@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: #24292d;
+    color: #ffffff;
+    font-family: Viga;
+}
+header {
+    background:#ffffff;
+    height: 110px;
+    color: #24292d;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+}
+.globalScore {
+    border: #ffffff solid 3px;
+    width: 400px;
+    height: 100px;
+    font-size: 30px;
+    margin: 20px auto;
+}
+#score {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player1 {
+    position: absolute;
+    left: -50px;
+    top: 25px;
+    background: #ffffff;
+    color: #24292d; 
+    padding: 5px;
+    border-radius: 5px;
+}
+.player2 {
+    position: absolute;
+    right: -50px;
+    top: 25px;
+    background: #ffffff;
+    color: #24292d; 
+    padding: 5px;
+    border-radius: 5px;
+}
+#player1, #player2, .pointers {
+    font-size: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 100px;
+    margin-right: 30px;
+}
+.item:hover, .item4:hover {
+    cursor: pointer;
+}
+
+.item4 {
+    width: 70px;
+}
