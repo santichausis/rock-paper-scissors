@@ -11,7 +11,7 @@ const scissor_div = document.getElementById("s");
 function getComputerChoice() {
     const choices = ["r","p","s"];
     const randomNumber = Math.floor(Math.random()*3);
-    return choices [randomNumber ]
+    return choices [randomNumber]
 }
 
 function convertToWord(letter) {
@@ -25,6 +25,10 @@ function win(userChoice, computerChoice) {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_div.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. You win.`;
+    document.getElementById(userChoice).classList.add('glow-green');
+    setTimeout(() => {
+        document.getElementById(userChoice).classList.remove('glow-green');  
+    }, 1000);
 }
 
 function lose(computerChoice, userChoice) {
@@ -32,10 +36,20 @@ function lose(computerChoice, userChoice) {
     computerScore_span.innerHTML = computerScore;
     userScore_span.innerHTML = userScore;
     result_div.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. You lose...`;
+    document.getElementById(computerChoice).classList.add('glow-red');
+    setTimeout(() => {
+        document.getElementById(computerChoice).classList.remove('glow-red');  
+    }, 1000);
 }
 
 function draw(userChoice, computerChoice) {
     result_div.innerHTML = `${convertToWord(userChoice)} don't beat ${convertToWord(computerChoice)}. It's a Draw.`;
+    document.getElementById(userChoice).classList.add('glow-draw');
+    document.getElementById(computerChoice).classList.add('glow-draw');
+    setTimeout(() => {
+        document.getElementById(computerChoice).classList.remove('glow-draw');  
+        document.getElementById(userChoice).classList.remove('glow-draw');  
+    }, 1000);
 }
 
 function game(userChoice) {
