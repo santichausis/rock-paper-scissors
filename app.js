@@ -73,6 +73,14 @@ function game(userChoice) {
     }
 }
 
+function resetGame() {
+        userScore = 0;
+        computerScore = 0;
+        userScore_span.innerHTML = 0;
+        computerScore_span.innerHTML = 0;
+        result_div.innerHTML = "You have one choice!";
+}
+
 function main() {
     
     rock_div.addEventListener('click',function() {

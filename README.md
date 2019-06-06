@@ -4,13 +4,14 @@ Rock! Paper! Scissor! is a JS Game.
 
   - HTML5
   - CSS3
-  - JAVASCRIPT
+  - JavaScript
 
 # New Features!
 
-  - New UI
+  - Mobile Friendly
+  - Reset game option
 
 # Future Features!
 
-  - Mobile Friendly
+  - History of the game
   - Players Names to complete
