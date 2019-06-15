@@ -17,10 +17,10 @@
     <section id="globalScore" class="score-board">
         <div id="score">
             <p id="user-label" class="player player1">User</p>
-            <p id="computer-label" class="player player2">Computer</p>
             <div id="player1">0</div>
             <div>:</div>
             <div id="player2">0</div>
+            <p id="computer-label" class="player player2">Computer</p>
         </div>
     </section>
 
@@ -38,7 +38,9 @@
 
     <!-- Button -->
     <section class="last-quote">
-        <button id="resetGame" class="resetGame" onclick="resetGame()">Reset Game</button>
+        <div id="btn-icon"> 
+            <button id="resetGame" class="resetGame" onclick="resetGame()">Reset Game</button>
+        </div>
     </section>
 
     <!-- Turn Message -->
@@ -53,7 +55,7 @@
         </a>
         <a href="https://www.linkedin.com/in/santichausis/">
             <figure id="linkedin"><img src="img/linkedin.svg" alt="Linkedin"></figure>
-        </a>
+        </a>    
     </section>
 <script src="app.js"></script>
 </body>

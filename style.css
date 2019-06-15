@@ -11,26 +11,23 @@ body {
 }
 header {
     background:#ffffff;
-    height: 110px;
     color: #24292d;
     font-size: 30px;
-    text-align: center;
-    width: 100%;
-    padding-top: 15px;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
 }
 .score-board {
     border: #ffffff solid 3px;
-    width: 400px;
-    height: 100px;
+    display: flex;
+    justify-content: center ;
+    margin: 2% 35%;
     font-size: 30px;
-    margin: 20px auto;
 }
 #score {
     position: relative;
-    text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .player {
     position: absolute;
@@ -41,10 +38,10 @@ header {
     border-radius: 5px;
 }
 .player1 {
-    left: -45px;
+    left: -170px;
 }
 .player2 {
-    right: -65px;
+    right: -205px;
 }
 #player1, #player2 {
     font-size: 70px;
@@ -52,20 +49,21 @@ header {
     margin-right: 20px;
 }
 .result {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 35px;
 }
 #images {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 .item {
     width: 100px;
     margin: 30px 10px;
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     padding: 10px;
+    transition: 1s;
 }
 .item:hover {
     cursor: pointer;
@@ -73,31 +71,46 @@ header {
 }
 .glow-green {
     border: 3px solid #036434;
+    transition: 1s;
 }
 .glow-green:hover {
     background-color: #0dac5c;
+    transition: 1s;
 }
 .glow-red {
     border: 3px solid #640303;
-    background-color: #ac120d;  
+    background-color: #ac120d; 
+    transition: 1s; 
 }
 .glow-draw {
-    border: 3px solid #036164;
+    border: 3px solid #119ba0;
+    transition: 1s;
 }
 .glow-draw:hover {
     background-color: #a7f7f7;  
+    transition: 1s;
 }
 #resetGame {
     font-size: 20px;
+    width: 300px;
     border: #ffffff solid 2px;
     border-radius: 20px;
-    padding: 10px 20px; 
+    padding: 10px 10px; 
     color: #ffffff;
     background-color: #24292d;
     cursor: pointer;
+    transition: 500ms;
+}
+#resetGame:hover {
+    font-size: 20px;
+}
+#btn-icon {
+    display: flex;
+    justify-content: center;
 }
 .last-quote {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 29px;
     margin-top: 40px;
 }
@@ -112,10 +125,6 @@ header {
     margin: 5px;
 }
 
-#github:hover, #linkedin:hover {
-    fill: red;
-  }
-
   @media (max-width: 600px) {
     header {
         padding-top: 20px;
@@ -123,29 +132,22 @@ header {
         height: 80px;
     }
     .score-board {
-        border: #ffffff solid 3px;
-        width: 70%;
-        height: 80px;
-        font-size: 25px;
-        margin-top: 80px;
+        border: none;
+        display: flex;
+        font-size: 24px;
     }
     #player1, #player2 {
         font-size: 50px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .player1 {
-        top: -65px;
-        left: 0px;
-    }
-    .player2 {
-        top: -65px;
-        right: 0px;
+    .player1, .player2 {
+        position: initial;
+        width: 120px;
+        text-align: center;
     }
     .result {
         margin-top: 40px;
-        text-align: center;
         font-size: 25px;
     }
-
   }
